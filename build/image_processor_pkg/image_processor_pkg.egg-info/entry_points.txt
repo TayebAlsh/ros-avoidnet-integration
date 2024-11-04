@@ -1,0 +1,3 @@
+[console_scripts]
+image_processor = image_processor_pkg.image_processor:main
+

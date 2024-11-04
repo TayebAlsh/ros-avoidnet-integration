@@ -1,0 +1,35 @@
+running egg_info
+creating build/image_processor_pkg/image_processor_pkg.egg-info
+writing build/image_processor_pkg/image_processor_pkg.egg-info/PKG-INFO
+writing dependency_links to build/image_processor_pkg/image_processor_pkg.egg-info/dependency_links.txt
+writing entry points to build/image_processor_pkg/image_processor_pkg.egg-info/entry_points.txt
+writing requirements to build/image_processor_pkg/image_processor_pkg.egg-info/requires.txt
+writing top-level names to build/image_processor_pkg/image_processor_pkg.egg-info/top_level.txt
+writing manifest file 'build/image_processor_pkg/image_processor_pkg.egg-info/SOURCES.txt'
+reading manifest file 'build/image_processor_pkg/image_processor_pkg.egg-info/SOURCES.txt'
+writing manifest file 'build/image_processor_pkg/image_processor_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build
+creating /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib
+creating /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg
+copying image_processor_pkg/image_processor.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg
+copying image_processor_pkg/__init__.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg
+running install
+running install_lib
+creating /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg
+copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/image_processor.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg
+copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/__init__.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg
+byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/image_processor.py to image_processor.cpython-310.pyc
+byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/share/ament_index
+creating /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/share/ament_index/resource_index
+creating /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/share/ament_index/resource_index/packages
+copying resource/image_processor_pkg -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/share/image_processor_pkg
+running install_egg_info
+Copying build/image_processor_pkg/image_processor_pkg.egg-info to /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing image_processor script to /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/image_processor_pkg
+writing list of installed files to '/home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/install.log'
