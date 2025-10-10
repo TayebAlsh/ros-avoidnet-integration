@@ -24,7 +24,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'image_processor = image_processor_pkg.image_processor:main',
+            # Keep the installed executable name the same so launch/ros2 run calls still work,
+            # but point it to the updated module implementation.
+            'image_processor = image_processor_pkg.image_processor_updated:main',
         ],
     },
 )

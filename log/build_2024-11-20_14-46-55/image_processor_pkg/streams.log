@@ -1,0 +1,79 @@
+[0.381s] Invoking command in '/home/risc/rov/src/image_processor_pkg': PYTHONPATH=/home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/image_processor_pkg build --build-base /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build install --record /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/install.log --single-version-externally-managed install_data
+[0.533s] running egg_info
+[0.534s] writing build/image_processor_pkg/image_processor_pkg.egg-info/PKG-INFO
+[0.534s] writing dependency_links to build/image_processor_pkg/image_processor_pkg.egg-info/dependency_links.txt
+[0.534s] writing entry points to build/image_processor_pkg/image_processor_pkg.egg-info/entry_points.txt
+[0.534s] writing requirements to build/image_processor_pkg/image_processor_pkg.egg-info/requires.txt
+[0.534s] writing top-level names to build/image_processor_pkg/image_processor_pkg.egg-info/top_level.txt
+[0.535s] reading manifest file 'build/image_processor_pkg/image_processor_pkg.egg-info/SOURCES.txt'
+[0.536s] writing manifest file 'build/image_processor_pkg/image_processor_pkg.egg-info/SOURCES.txt'
+[0.536s] running build
+[0.537s] running build_py
+[0.537s] copying image_processor_pkg/test2.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg
+[0.537s] copying image_processor_pkg/play.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg
+[0.537s] copying image_processor_pkg/image_processor_old.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg
+[0.537s] copying image_processor_pkg/image_processor.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg
+[0.537s] creating /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.537s] copying image_processor_pkg/AvoidNet/train_mobilenet.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.537s] copying image_processor_pkg/AvoidNet/logger_viz.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.537s] copying image_processor_pkg/AvoidNet/draw_obsticle.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.537s] copying image_processor_pkg/AvoidNet/PID_control.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.537s] copying image_processor_pkg/AvoidNet/train.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.537s] copying image_processor_pkg/AvoidNet/run_model.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.537s] copying image_processor_pkg/AvoidNet/trajectory.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.538s] copying image_processor_pkg/AvoidNet/__init__.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.538s] copying image_processor_pkg/AvoidNet/dataset.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.538s] copying image_processor_pkg/AvoidNet/visualize.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.538s] copying image_processor_pkg/AvoidNet/test.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.538s] copying image_processor_pkg/AvoidNet/generate_grid.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.538s] copying image_processor_pkg/AvoidNet/avoid_net.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.538s] copying image_processor_pkg/AvoidNet/test_on_pi.py -> /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet
+[0.538s] running install
+[0.538s] running install_lib
+[0.539s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/test2.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg
+[0.539s] creating /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.539s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/train_mobilenet.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.539s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/logger_viz.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.539s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/draw_obsticle.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.539s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/PID_control.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.539s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/train.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.539s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/run_model.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.539s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/trajectory.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.539s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/__init__.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.540s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/dataset.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.540s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/visualize.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.540s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/test.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.540s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/generate_grid.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.540s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/avoid_net.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.540s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/AvoidNet/test_on_pi.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet
+[0.540s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/play.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg
+[0.540s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/image_processor_old.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg
+[0.540s] copying /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build/lib/image_processor_pkg/image_processor.py -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg
+[0.540s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/test2.py to test2.cpython-310.pyc
+[0.541s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/train_mobilenet.py to train_mobilenet.cpython-310.pyc
+[0.542s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/logger_viz.py to logger_viz.cpython-310.pyc
+[0.542s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/draw_obsticle.py to draw_obsticle.cpython-310.pyc
+[0.542s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/PID_control.py to PID_control.cpython-310.pyc
+[0.542s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/train.py to train.cpython-310.pyc
+[0.543s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/run_model.py to run_model.cpython-310.pyc
+[0.544s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/trajectory.py to trajectory.cpython-310.pyc
+[0.544s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/__init__.py to __init__.cpython-310.pyc
+[0.544s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/dataset.py to dataset.cpython-310.pyc
+[0.545s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/visualize.py to visualize.cpython-310.pyc
+[0.545s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/test.py to test.cpython-310.pyc
+[0.546s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/generate_grid.py to generate_grid.cpython-310.pyc
+[0.546s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/avoid_net.py to avoid_net.cpython-310.pyc
+[0.546s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/AvoidNet/test_on_pi.py to test_on_pi.cpython-310.pyc
+[0.547s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/play.py to play.cpython-310.pyc
+[0.547s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/image_processor_old.py to image_processor_old.cpython-310.pyc
+[0.548s] byte-compiling /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg/image_processor.py to image_processor.cpython-310.pyc
+[0.548s] running install_data
+[0.549s] creating /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/share/image_processor_pkg/models
+[0.549s] copying image_processor_pkg/models/ImageReducer_bounded_grayscale_run_2.pth -> /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/share/image_processor_pkg/models
+[0.552s] running install_egg_info
+[0.553s] removing '/home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.553s] Copying build/image_processor_pkg/image_processor_pkg.egg-info to /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages/image_processor_pkg-0.0.0-py3.10.egg-info
+[0.554s] running install_scripts
+[0.568s] Installing image_processor script to /home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/image_processor_pkg
+[0.568s] writing list of installed files to '/home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/install.log'
+[0.584s] Invoked command in '/home/risc/rov/src/image_processor_pkg' returned '0': PYTHONPATH=/home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/risc/rov/src/image_processor_pkg/install/image_processor_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/image_processor_pkg build --build-base /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/build install --record /home/risc/rov/src/image_processor_pkg/build/image_processor_pkg/install.log --single-version-externally-managed install_data
