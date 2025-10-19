@@ -3,9 +3,8 @@ import numpy as np
 from avoid_net import get_model
 import torch
 from PIL import Image
-import numpy as np
 from torchvision import transforms
-import time
+
 
 class ObstacleSystem:
     def __init__(self, arc, run_name, threshold=0.5, fake=False, record=False):
@@ -15,12 +14,16 @@ class ObstacleSystem:
         self.record = record
         self.arc = arc
         self.run_name = run_name
-        self.transform = transforms.Compose([
-            transforms.Resize([155, 155], interpolation=transforms.InterpolationMode.BILINEAR),
-            transforms.Grayscale(num_output_channels=1),
-            transforms.ToTensor(),
-            transforms.Normalize(mean=[0.5], std=[0.5]),
-        ])
+        self.transform = transforms.Compose(
+            [
+                transforms.Resize(
+                    [155, 155], interpolation=transforms.InterpolationMode.BILINEAR
+                ),
+                transforms.Grayscale(num_output_channels=1),
+                transforms.ToTensor(),
+                transforms.Normalize(mean=[0.5], std=[0.5]),
+            ]
+        )
         self.model = self.load_model()
         self.fake = fake
         self.cap = self.open_camera()
@@ -29,13 +32,18 @@ class ObstacleSystem:
 
     def load_model(self):
         model = get_model(self.arc)
-        model.load_state_dict(torch.load(f"models/{self.arc}_{self.run_name}.pth", map_location=torch.device("cpu")))
+        model.load_state_dict(
+            torch.load(
+                f"models/{self.arc}_{self.run_name}.pth",
+                map_location=torch.device("cpu"),
+            )
+        )
         device = torch.device("cpu")
         print(f"Running model on: {device}")
         model.to(device)
         model.eval()
         return model
-    
+
     def open_camera(self):
         # Create a VideoCapture object
         if self.fake:
@@ -51,9 +59,12 @@ class ObstacleSystem:
                 print("Preparing to record")
                 # Define the codec and create VideoWriter object, use mp4
                 import time
+
                 date_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-                fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-                self.out = cv2.VideoWriter(f"videos/output_{date_time}.mp4", fourcc, 5.0, (640, 480))
+                fourcc = cv2.VideoWriter_fourcc(*"mp4v")
+                self.out = cv2.VideoWriter(
+                    f"videos/output_{date_time}.mp4", fourcc, 5.0, (640, 480)
+                )
         return cap
 
     def process_frame(self, frame):
@@ -68,7 +79,7 @@ class ObstacleSystem:
         # show the output
         # frame = draw_red_squares(frame, outputs, 0.5)
         return frame
-    
+
     def find_and_avoid(self, grid):
         found = False
         search_area = 5
@@ -76,18 +87,27 @@ class ObstacleSystem:
         center = (grid.shape[1] // 2, grid.shape[0] // 2)
 
         # see if any of the squares in the center of the grid plus search area are above the threshold
-        center_area = grid[center[1] - search_area : center[1] + search_area, center[0] - search_area : center[0] + search_area]
+        center_area = grid[
+            center[1] - search_area : center[1] + search_area,
+            center[0] - search_area : center[0] + search_area,
+        ]
         if np.any(center_area > self.threshold):
             found = True
-            
+
         # search up, left and right of the center for a clear path and set the new trajectory
         if found:
             # get the average of all values of the grid above the centerr area
-            up = np.mean(grid[:center[1], center[0] - search_area : center[0] + search_area])
+            up = np.mean(
+                grid[: center[1], center[0] - search_area : center[0] + search_area]
+            )
             # get the average of all values of the grid to the left of the centerr area
-            left = np.mean(grid[center[1] - search_area : center[1] + search_area, :center[0]])
+            left = np.mean(
+                grid[center[1] - search_area : center[1] + search_area, : center[0]]
+            )
             # get the average of all values of the grid to the right of the centerr area
-            right = np.mean(grid[center[1] - search_area : center[1] + search_area, center[0]:])
+            right = np.mean(
+                grid[center[1] - search_area : center[1] + search_area, center[0] :]
+            )
 
             # find the lowest average and set the new trajectory
             if up < left and up < right:
@@ -98,12 +118,10 @@ class ObstacleSystem:
                 direction = "right"
             else:
                 direction = "up"
-                
+
             return found, direction
         else:
             return found, None
-                
-            
 
     def avoid_obsticale(self):
         # Read frame from camera
@@ -132,6 +150,7 @@ class ObstacleSystem:
         # close the video file
         if self.record:
             self.out.release()
+
 
 # example usage
 # arc = "resnet18"
