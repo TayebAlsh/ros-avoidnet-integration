@@ -96,6 +96,8 @@ class ImageProcessor(Node):
                 cv2.arrowedLine(frame, (w//2, h//2), (w//2 + 100, h//2), (0, 255, 255), 2)
             elif new_trej == "up":
                 cv2.arrowedLine(frame, (w//2, h//2), (w//2, h//2 - 100), (0, 255, 255), 2)
+
+            # TODO: send signal to the controller here! send the `new_trej` variable
             
             self.obstacle = 1
 
@@ -119,7 +121,7 @@ class ImageProcessor(Node):
 
     def joy_callback(self, msg):
         # Print the received joystick message
-        # print(msg)
+        print(msg)
 
         # # Check if button 4 is pressed (indexing starts at 0)
         # if len(msg.buttons) > 4 and msg.buttons[4]:
